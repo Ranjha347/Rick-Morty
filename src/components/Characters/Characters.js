@@ -8,7 +8,7 @@ export default function Characters() {
     let [gender, setGender] = useState('');
     let [species, setSpecies] = useState('');
     let [page, setPage] = useState(1);
-    let [maxPages, setMaxPages] = useState()
+    let [maxPages, setMaxPages] = useState();
     let api = `https://rickandmortyapi.com/api/character?page=${page}&name=${search}&status=${status}&gender=${gender}&species=${species}`;
 
     function changePage(accion){
@@ -31,7 +31,8 @@ export default function Characters() {
             setResults(data.results);
             setMaxPages(data.info.pages)}
             catch(error){
-        console.log(results)}
+              
+            }
 
         })()
     }, [api])
@@ -56,7 +57,8 @@ export default function Characters() {
                 <button>Search</button>
               </div>
               <div className="main-listcontainer-charlist">
-                {results.map((personaje, index) => (
+                {results ? 
+                results.map((personaje, index) => (
                   <TarjetaPersonaje
                     key={index}
                     name={personaje.name}
@@ -64,7 +66,10 @@ export default function Characters() {
                     status={personaje.status}
                     image={personaje.image}
                   ></TarjetaPersonaje>
-                ))}
+                )):
+                (
+                  <p>Error ...</p>
+                )}
               </div>
               <div>
                 <button onClick={()=> changePage("RESTA")}>anterior</button>
