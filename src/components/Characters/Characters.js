@@ -23,7 +23,19 @@ export default function Characters() {
     
     }
 
-   
+    useEffect(() => {
+        (async () => {
+            try{
+            const response = await fetch(api)
+            const data = await response.json()
+            setResults(data.results);
+            setMaxPages(data.info.pages)}
+            catch(error){
+              
+            }}
+
+        )()
+    }, [api])
   
     return (
         <React.Fragment>
