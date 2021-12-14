@@ -20,7 +20,7 @@ export default function Characters() {
     }
     function changeSearch (event){
         setSearch(event.target.value) 
-      
+    
     }
 
     useEffect(() => {
