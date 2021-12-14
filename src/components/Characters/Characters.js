@@ -25,10 +25,14 @@ export default function Characters() {
 
     useEffect(() => {
         (async () => {
+            try{
             const response = await fetch(api)
             const data = await response.json()
             setResults(data.results);
-            setMaxPages(data.info.pages)
+            setMaxPages(data.info.pages)}
+            catch(error){
+        console.log(results)}
+
         })()
     }, [api])
   
