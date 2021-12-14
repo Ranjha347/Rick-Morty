@@ -1,26 +1,21 @@
-import react, { useState } from "react";
+import react from "react";
 import "./App.css";
-import TarjetaPersonaje from "./components/TarjetaPersonaje";
+import Characters from "./components/Characters/Characters";
 
 function App() {
-  let [results, setResults] = useState([]);
-
-  let api = "https://rickandmortyapi.com/api/character";
-
-  fetch(api)
-    .then((response) => response.json())
-    .then((data) => setResults(data.results));
 
   return (
-    <div>
-      {results.map((personaje, index) => (
-        <TarjetaPersonaje
-          key={index}
-          name={personaje.name}
-          location={personaje.location.name}
-        ></TarjetaPersonaje>
-      ))}
-    </div>
+    <react.Fragment>
+      <header className="header">
+        <img className="header-img" src="" alt=""/>
+        <nav className="header-nav">
+          <a className="header-nav-a" href="#">Characters</a>
+          <a className="header-nav-a" href="#">Episodes</a>
+          <a className="header-nav-a" href="#">Locations</a>
+        </nav>
+      </header>
+      <Characters/>
+    </react.Fragment>
   );
 }
 
