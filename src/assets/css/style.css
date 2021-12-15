@@ -1,5 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  background-color: #eee;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+.navbar-brand span {
+  color: #5688f6;
+}
+
+.navbar li {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  transition: 0.3s ease-in-out;
+}
+.navbar li a:hover {
+  color: #5688f6 !important;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+.dropdowns {
   background-color: white;
+  padding: 2em 10px;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 18rem;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.card img {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 1em;
+  border-radius: 50%;
+}
+
+.status-text {
+  border-radius: 10px;
+  width: 30%;
+  margin: 10px auto;
+}
+
+span.couldn-find {
+  font-weight: bold;
+}
+
+.p-text {
+  cursor: pointer;
+}
+
+.Dead {
+  background-color: red;
+  color: white;
+}
+
+.unknown {
+  background-color: gray;
+  color: white;
+}
+
+.Alive {
+  background-color: aqua;
 }
 
 /*# sourceMappingURL=style.css.map */

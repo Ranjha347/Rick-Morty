@@ -1,3 +1,11 @@
-body{
-    background-color: white;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+body{
+    background-color: #eee;
+}
+@import 'components/nav.scss';
+@import 'components/section.scss';
+@import 'components/card.scss'

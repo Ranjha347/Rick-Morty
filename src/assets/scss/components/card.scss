@@ -1,0 +1,40 @@
+.cards{
+   display: flex;
+   flex-wrap: wrap;
+}
+.card{
+   width: 18rem;
+   margin-bottom: 10px;
+   margin-left: 5px;
+
+   img{
+      width: 70%;
+      margin: 0 auto;
+      padding-top: 1em;
+      border-radius: 50%;
+
+   }
+}
+.status-text{
+   border-radius: 10px;
+   width: 30%;
+   margin:10px auto;
+}
+span.couldn-find {
+   font-weight: bold;
+}
+.p-text{
+   cursor: pointer;
+}
+.Dead{
+   background-color: red;
+   color: white;
+}
+.unknown{
+   background-color: gray;
+   color: white;
+}
+.Alive{
+   background-color: aqua;
+   
+}

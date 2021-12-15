@@ -1,14 +1,15 @@
 import React from "react";
 
 export default function TarjetaPersonaje({ name, location, status, image }) {
-  let statusclass = "status " + status;
+  let statusclass = "status-text " + status;
   return (
-    <div className="card">
-      <img src={image} className="card-img-top" alt="..." />
-      <div className="card-body">
-        <h5 className="card-title">{name}</h5>
-        <p className="card-location">{location}</p>
-        <p className={statusclass}>{status}</p>
+    <div class="card text-center">
+      <img src={image} class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{name}</h5>
+        <p class="card-text">{location}</p>
+        <p className={statusclass}> {status}</p>
+        <a href="#" class="btn btn-primary">Add to cart</a>
       </div>
     </div>
   );

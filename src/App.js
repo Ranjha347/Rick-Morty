@@ -1,20 +1,15 @@
 import react from "react";
 import "./App.css";
-import Characters from "./components/Characters/Characters";
+import Navbar from "./components/navbar";
+import Section from "./components/section";
 
 function App() {
 
   return (
     <react.Fragment>
-      <header className="header">
-        <img className="header-img" src="" alt=""/>
-        <nav className="header-nav">
-          <a className="header-nav-a" href="#">Characters</a>
-          <a className="header-nav-a" href="#">Episodes</a>
-          <a className="header-nav-a" href="#">Locations</a>
-        </nav>
-      </header>
-      <Characters/>
+        <Navbar/>
+        <h1 className="mt-3 text-bold text-center">Characters</h1>
+        <Section/>
     </react.Fragment>
   );
 }
