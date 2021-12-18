@@ -1,3 +1,6 @@
+.navbar{
+   background-color: #fff!important;
+}
 .navbar-brand{
    font-weight: bold;
    span{
@@ -17,4 +20,8 @@
 }
 .nav-link{
    font-weight: bold;
+}
+.fa-cart-shopping:before, .fa-shopping-cart:before {
+   content: "\f07a";
+   font-size: 22px;
 }

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import TarjetaPersonaje from "./TarjetaPersonaje";
+
 //  import Filters from "./Characters/Filters";
 
 
@@ -59,48 +60,47 @@ export default function Characters() {
    return (
       <div className="container-fluid">
          <div className="row mt-5">
-            <div className="col-lg-3  text-center">
+            <div className="col-lg-3  text-center mb-5">
                <h2>Filters</h2>
                <p className='text-primary p-text' onClick={clearFilter}>Clear Filter</p>
                <div className="dropdowns shadow">
-                  <div className="dropdown">
-                     <a className="btn btn-secondary dropdown-toggle w-50" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                  <div class="dropdown">
+                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                         Status
                      </a>
-                     <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a className="dropdown-item" href="#" onClick={changeStatus}>Alive</a>
-                        <a className="dropdown-item" href="#" onClick={changeStatus}>Dead</a>
-                        <a className="dropdown-item" href="#" onClick={changeStatus} >Unknown</a>
-                     </div>
+                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#" onClick={changeStatus} >Alive</a></li>
+                        <li><a class="dropdown-item" href="#" onClick={changeStatus} >Dead</a></li>
+                        <li><a class="dropdown-item" href="#" onClick={changeStatus} >Unknown</a></li>
+                     </ul>
                   </div>
                   <br />
-                  <div className="dropdown">
-                     <a className="btn btn-secondary dropdown-toggle w-50" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                  <div class="dropdown">
+                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                         Species
                      </a>
 
-                     <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a className="dropdown-item" href="#" onClick={changeSpecies}>Human</a>
-                        <a className="dropdown-item" href="#" onClick={changeSpecies}>Alien</a>
-                        <a className="dropdown-item" href="#" onClick={changeSpecies} >Humanoid</a>
-                     </div>
+                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a className="dropdown-item" href="#" onClick={changeSpecies}>Human</a></li>
+                        <li> <a className="dropdown-item" href="#" onClick={changeSpecies}>Alien</a></li>
+                        <li><a className="dropdown-item" href="#" onClick={changeSpecies} >Humanoid</a></li>
+                     </ul>
                   </div>
                   <br />
-                  <div className="dropdown">
-                     <a className="btn btn-secondary dropdown-toggle w-50" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-                        Gender
+                  <div class="dropdown">
+                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                     Gender
                      </a>
-                     <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a className="dropdown-item" href="#" onClick={changeGender}>male</a>
-                        <a className="dropdown-item" href="#" onClick={changeGender}>Female</a>
-                        <a className="dropdown-item" href="#" onClick={changeGender}>genderless</a>
-                     </div>
+                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a className="dropdown-item" href="#" onClick={changeGender}>male</a></li>
+                        <li><a className="dropdown-item" href="#" onClick={changeGender}>Female</a></li>
+                        <li><a className="dropdown-item" href="#" onClick={changeGender}>genderless</a></li>
+                     </ul>
                   </div>
-
                </div>
             </div>
             <div className="col-lg-9">
-               <div className="group d-flex  mb-3" >
+               <div className="group d-flex " >
                   <input type="text" className='form-control search-input' value={search} onChange={changeSearch} />
                   <button type="button" class="btn btn-primary ml-3" onClick={changeSearch}>Search</button>
                </div>

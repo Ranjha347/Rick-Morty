@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
-export default function TarjetaPersonaje({ name, location, status, image }) {
-  let statusclass = "status-text " + status;
-  return (
-    <div class="card text-center">
+export default function EpiCard({key,name,location,status,image,id}) {
+   let statusclass = "status-text " + status;
+   return (
+      <div class="card text-center shadow">
       <img src={image} class="card-img-top" alt="..." />
       <div class="card-body">
         <h5 class="card-title">{name}</h5>
@@ -12,5 +12,5 @@ export default function TarjetaPersonaje({ name, location, status, image }) {
         <a href="#" class="btn btn-primary">Add to cart</a>
       </div>
     </div>
-  );
+   )
 }

@@ -1,0 +1,51 @@
+.myD{
+   width: 80%!important;
+}
+.episode-name{
+   color: #5688f6;
+}
+.epi-det{
+   font-size: 1.25rem!important;
+   margin: 10px!important;
+}
+.nav2 {
+   background: #d9d9d9;
+   label{
+      width:100% ;
+   }
+   a{
+      color: black;
+   }
+ }
+
+ .nav2_span {
+   padding : 20px;
+   background : #2d2f31; 
+   color : white;
+   font-size : 1.2em;
+   font-variant : small-caps;
+   cursor : pointer;
+   display: block;
+   text-align: left;
+ }
+ 
+ .nav2_span::after {
+   float: right;
+   right: 10%;
+   content: "+";
+ }
+ 
+ .slide {
+   clear:both;
+   width:100%;
+   height:0px;
+   overflow: hidden;
+   text-align: center;
+   transition: height .4s ease;
+ }
+ 
+ .slide li {padding : 30px;}
+ 
+ #touch {position: absolute; opacity: 0; height: 0px;}    
+ 
+ #touch:checked + .slide {height: 300px;} 

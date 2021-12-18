@@ -8,41 +8,13 @@ body {
   background-color: #eee;
 }
 
-.navbar-brand {
-  font-weight: bold;
-}
-.navbar-brand span {
-  color: #5688f6;
-}
-
-.navbar li {
-  margin-left: 1.5em;
-  margin-right: 1.5em;
-  transition: 0.3s ease-in-out;
-}
-.navbar li a:hover {
-  color: #5688f6 !important;
-}
-
-.nav-link {
-  font-weight: bold;
-}
-
-.dropdowns {
-  background-color: white;
-  padding: 2em 10px;
-  width: 80%;
-  margin: 0 auto;
-  border-radius: 5px;
-}
-
 .cards {
   display: flex;
   flex-wrap: wrap;
 }
 
 .card {
-  width: 18rem;
+  width: 23rem;
   margin-bottom: 10px;
   margin-left: 5px;
 }
@@ -68,17 +40,142 @@ span.couldn-find {
 }
 
 .Dead {
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.5);
+  border-color: #c80000;
   color: white;
 }
 
 .unknown {
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.5);
+  border-color: #6e6e6e;
   color: white;
 }
 
 .Alive {
-  background-color: aqua;
+  background-color: rgba(91, 236, 72, 0.5);
+  border-color: #00a50e;
+}
+
+.navbar {
+  background-color: #fff !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+.navbar-brand span {
+  color: #5688f6;
+}
+
+.navbar li {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  transition: 0.3s ease-in-out;
+}
+.navbar li a:hover {
+  color: #5688f6 !important;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+.fa-cart-shopping:before, .fa-shopping-cart:before {
+  content: "\f07a";
+  font-size: 22px;
+}
+
+.dropdowns {
+  background-color: white;
+  padding: 2em 10px;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+a#dropdownMenuLink {
+  width: 50%;
+}
+
+.group {
+  margin-bottom: 1em;
+}
+
+input.form-control.search-input {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 990px) {
+  .group.d-flex {
+    margin-bottom: 1em;
+    flex-direction: column;
+  }
+
+  input.form-control.search-input {
+    margin-bottom: 10px;
+  }
+}
+.myD {
+  width: 80% !important;
+}
+
+.episode-name {
+  color: #5688f6;
+}
+
+.epi-det {
+  font-size: 1.25rem !important;
+  margin: 10px !important;
+}
+
+.nav2 {
+  background: #d9d9d9;
+}
+.nav2 label {
+  width: 100%;
+}
+.nav2 a {
+  color: black;
+}
+
+.nav2_span {
+  padding: 20px;
+  background: #2d2f31;
+  color: white;
+  font-size: 1.2em;
+  font-variant: small-caps;
+  cursor: pointer;
+  display: block;
+  text-align: left;
+}
+
+.nav2_span::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear: both;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height 0.4s ease;
+}
+
+.slide li {
+  padding: 30px;
+}
+
+#touch {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+
+#touch:checked + .slide {
+  height: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */

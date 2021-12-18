@@ -3,7 +3,7 @@
    flex-wrap: wrap;
 }
 .card{
-   width: 18rem;
+   width: 23rem;
    margin-bottom: 10px;
    margin-left: 5px;
 
@@ -27,14 +27,18 @@ span.couldn-find {
    cursor: pointer;
 }
 .Dead{
-   background-color: red;
+   background-color: rgba(255, 0, 0, 0.5);
+   border-color: rgb(200, 0, 0);
    color: white;
 }
 .unknown{
-   background-color: gray;
+   background-color: rgba(128, 128, 128, 0.5);
+   border-color: rgb(110, 110, 110);
    color: white;
 }
 .Alive{
-   background-color: aqua;
-   
+   background-color: rgba(91, 236, 72, 0.5);
+   border-color: rgb(0, 165, 14);
 }
+
+

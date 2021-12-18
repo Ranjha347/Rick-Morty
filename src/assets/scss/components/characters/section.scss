@@ -1,0 +1,26 @@
+.dropdowns {
+   background-color: white;
+   padding: 2em 10px;
+   width: 80%;
+   margin: 0 auto;
+   border-radius: 5px;
+}
+a#dropdownMenuLink {
+   width: 50%;
+}
+.group{
+   margin-bottom: 1em;
+}  input.form-control.search-input {
+   margin-right: 10px;
+}
+
+
+@media only screen and (max-width: 990px) {
+   .group.d-flex {
+      margin-bottom: 1em;
+      flex-direction: column;
+  }
+  input.form-control.search-input {
+   margin-bottom: 10px;
+}
+ }
